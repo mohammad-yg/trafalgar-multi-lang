@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  background: #458ff6;
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+  position: relative;
+  margin-right: 12px;
+  span {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 50%;
+    right: 50%;
+    font-size: 26px;
+    color: #fff;
+  }
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #233348;
+}

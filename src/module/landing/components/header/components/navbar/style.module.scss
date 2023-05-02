@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+
+  li {
+    margin: 0 20px;
+    color: #1f1534;
+    font-weight: 400;
+    font-style: 18px;
+
+    &.active {
+      font-weight: 700;
+    }
+  }
+}
