@@ -1,4 +1,5 @@
 import { FC } from "react";
+import style from './style.module.scss'
 
 const FirstSectionImage: FC = () => {
   return (
@@ -6,6 +7,7 @@ const FirstSectionImage: FC = () => {
       <img
         src="/media/landing/images/trafalgar-header illustration 1.png"
         alt=""
+        className={style.image}
       />
     </>
   );
