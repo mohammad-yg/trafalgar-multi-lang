@@ -8,8 +8,10 @@ const Navbar: FC = () => {
     return (
         <>
             <ul className={style.list}>
-                {items.map((_) => (
-                    <li className={`${_ === activeItem ? style.active : ''}`}>{_}</li>
+                {items.map((_, index) => (
+                    <li key={index} className={`${_ === activeItem ? style.active : ""}`}>
+                        {_}
+                    </li>
                 ))}
             </ul>
         </>
