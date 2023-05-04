@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { AppLang } from "./_model";
-import { LayoutCotnext } from "./LayoutContext";
 import { WithChild } from "@/module/shared/_models";
+import { LayoutCotnext } from "./layoutContext";
 
 type Prop = {
   lang: AppLang;
