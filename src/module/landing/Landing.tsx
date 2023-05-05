@@ -8,6 +8,7 @@ import OurServcesSection from "./components/our-services-section/OurServcesSecti
 import LeadingHealthcareSection from "./components/leading-healthcare-section/LeadingHealthcareSection";
 import DownloadMobileAppSection from "./components/download-mobile-app-section/DownloadMobileAppSection";
 import CommentsSection from "./components/comments-section/CommentsSection";
+import LastArticleSection from "./components/last-article-section/LastArticleSection";
 
 type Prop = {
   lang: AppLang;
@@ -24,6 +25,7 @@ const Landing: FC<Prop> = ({ lang }) => {
           <LeadingHealthcareSection />
           <DownloadMobileAppSection />
           <CommentsSection />
+          <LastArticleSection />
         </div>
       </Layout>
     </>
