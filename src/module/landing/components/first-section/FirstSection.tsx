@@ -1,8 +1,8 @@
 import { FC } from "react";
-
-import style from "./style.module.scss";
 import FirstSectionImage from "./components/image/FirstSectionImage";
 import FirstSectionContent from "./components/content/FirstSectionContent";
+import FirstSectionBackground from "./components/background/FirstSectionBackground";
+import style from "./style.module.scss";
 
 const FirstSection: FC = () => {
   return (
@@ -10,6 +10,7 @@ const FirstSection: FC = () => {
       <section className={style.section}>
         <FirstSectionContent />
         <FirstSectionImage />
+        <FirstSectionBackground />
       </section>
     </>
   );

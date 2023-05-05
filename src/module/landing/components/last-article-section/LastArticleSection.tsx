@@ -35,6 +35,9 @@ const LastArticleSection: FC = () => {
         <div className={style.background}>
             <img className={style.backgroundElement} src="/media/landing/svgs/element.svg" alt="background"/>
         </div>
+        <div className={style.background2}>
+            <img className={style.backgroundElement} src="/media/landing/svgs/background-2.svg" alt="background"/>
+        </div>
       </section>
     </>
   );
