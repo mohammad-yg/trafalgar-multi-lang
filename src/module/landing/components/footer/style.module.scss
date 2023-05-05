@@ -5,9 +5,10 @@
 }
 
 .container {
+  padding: 0 20px;
   padding-top: 118px;
   padding-bottom: 114px;
-  width: 1220px;
+  max-width: 1180px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;

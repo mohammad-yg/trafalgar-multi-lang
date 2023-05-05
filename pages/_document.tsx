@@ -1,13 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx:any) {
+  static async getInitialProps(ctx: any) {
     const originalRenderPage = ctx.renderPage;
 
     ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: (App:any) => App,
-        enhanceComponent: (Component:any) => Component,
+        enhanceApp: (App: any) => App,
+        enhanceComponent: (Component: any) => Component,
       });
 
     const initialProps = await Document.getInitialProps(ctx);
@@ -26,7 +26,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           ></link>
         </Head>
-        <body>
+        <body style={{ width: "100%", overflowX: "hidden" }}>
           <Main />
           <NextScript />
         </body>
