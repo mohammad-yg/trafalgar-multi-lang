@@ -24,7 +24,7 @@ const CommentsSection: FC = () => {
             />
           </div>
           <div className={style.backgroundElement}>
-            <img src="/media/landing/svgs/element-3.svg" alt="background" />
+            <img src="/media/landing/svgs/element.svg" alt="background" />
           </div>
         </div>
         <div className={style.pagination}>

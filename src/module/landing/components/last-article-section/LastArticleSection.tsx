@@ -33,7 +33,7 @@ const LastArticleSection: FC = () => {
         </div>
         <Button title="View all" style="hollow" className={style.button}/>
         <div className={style.background}>
-            <img className={style.backgroundElement} src="/media/landing/svgs/element-3.svg" alt="background"/>
+            <img className={style.backgroundElement} src="/media/landing/svgs/element.svg" alt="background"/>
         </div>
       </section>
     </>
