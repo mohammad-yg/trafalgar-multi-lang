@@ -9,6 +9,7 @@ import LeadingHealthcareSection from "./components/leading-healthcare-section/Le
 import DownloadMobileAppSection from "./components/download-mobile-app-section/DownloadMobileAppSection";
 import CommentsSection from "./components/comments-section/CommentsSection";
 import LastArticleSection from "./components/last-article-section/LastArticleSection";
+import Footer from "./components/footer/Footer";
 
 type Prop = {
   lang: AppLang;
@@ -27,6 +28,8 @@ const Landing: FC<Prop> = ({ lang }) => {
           <CommentsSection />
           <LastArticleSection />
         </div>
+
+        <Footer />
       </Layout>
     </>
   );
