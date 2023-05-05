@@ -1,14 +1,36 @@
+.wrapper {
+  &.center {
+    text-align: center;
+    .line {
+      margin-top: 26px;
+      margin: 26px auto 0 auto;
+    }
+  }
+  &.rtl {
+    text-align: right;
+    .line {
+      margin-top: 26px;
+      margin-left: auto;
+    }
+  }
+  &.ltr {
+    text-align: left;
+    .line {
+      margin-top: 26px;
+      margin-right: auto;
+    }
+  }
+}
+
 .title {
-  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 56px;
 }
 
-.line{
-    margin: 26px auto 0 auto;
-    height: 2px;
-    width: 56px;
-    border-radius: 2px;
-    background-color: #000;
+.line {
+  height: 2px;
+  width: 56px;
+  border-radius: 2px;
+  background-color: #000;
 }

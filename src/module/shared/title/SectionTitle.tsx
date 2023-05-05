@@ -1,12 +1,18 @@
 import { FC } from "react";
 import { WithChild } from "../_models";
-import style from './style.module.scss'
+import style from "./style.module.scss";
 
-const SectionTitle: FC<WithChild> = ({ children }) => {
+type Prop = {
+  direction: "center" | "rtl" | "ltr";
+};
+
+const SectionTitle: FC<Prop & WithChild> = ({ children, direction }) => {
   return (
     <>
-      <h2 className={style.title}>{children}</h2>
-      <div className={style.line}></div>
+      <div className={`${style.wrapper} ${style[direction]}`}>
+        <h2 className={style.title}>{children}</h2>
+        <div className={style.line}></div>
+      </div>
     </>
   );
 };

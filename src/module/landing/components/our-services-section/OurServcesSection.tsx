@@ -56,7 +56,7 @@ const OurServcesSection: FC = () => {
         </div>
 
         <div>
-          <SectionTitle>Our services</SectionTitle>
+          <SectionTitle direction="center">Our services</SectionTitle>
           <Description />
         </div>
         <div className={style.servicesWrapper}>

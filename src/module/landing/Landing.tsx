@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import style from "./style.module.scss";
 import FirstSection from "./components/first-section/FirstSection";
 import OurServcesSection from "./components/our-services-section/OurServcesSection";
+import LeadingHealthcareSection from "./components/leading-healthcare-section/LeadingHealthcareSection";
 
 type Prop = {
   lang: AppLang;
@@ -18,6 +19,7 @@ const Landing: FC<Prop> = ({ lang }) => {
           <Header />
           <FirstSection />
           <OurServcesSection />
+          <LeadingHealthcareSection />
         </div>
       </Layout>
     </>
