@@ -1,7 +1,7 @@
 import { FC } from "react";
-import style from "./style.module.scss";
 import Link from "next/link";
 import { rightArrow } from "@/module/shared/icons/arrows";
+import style from "./style.module.scss";
 
 type Prop = {
   image: string;

@@ -1,6 +1,6 @@
 import { FC } from "react";
-import Slide from "./slide/Slide";
-import Pagination from "./pagination/Pagination";
+import Slide from "./components/slide/Slide";
+import Pagination from "./components/pagination/Pagination";
 import style from "./style.module.scss";
 
 const CommentsSection: FC = () => {

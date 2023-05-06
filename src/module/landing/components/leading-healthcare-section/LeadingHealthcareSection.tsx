@@ -1,8 +1,8 @@
 import { FC } from "react";
+import SectionImage from "./components/section-image/SectionImage";
+import SectionContent from "./components/section-content/SectionContent";
+import SectionBackground from "./components/section-background/SectionBackground";
 import style from "./style.module.scss";
-import SectionImage from "./section-image/SectionImage";
-import SectionContent from "./section-content/SectionContent";
-import SectionBackground from "./section-background/SectionBackground";
 
 const LeadingHealthcareSection: FC = () => {
   return (

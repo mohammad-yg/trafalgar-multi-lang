@@ -1,7 +1,7 @@
 import { FC } from "react";
-import style from "./style.module.scss";
 import SectionImage from "./components/image/SectionImage";
 import SectionContent from "./components/content/SectionContent";
+import style from "./style.module.scss";
 
 const DownloadMobileAppSection: FC = () => {
   return (

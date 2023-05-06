@@ -1,8 +1,8 @@
 import { FC } from "react";
-import style from "./style.module.scss";
 import SectionTitle from "@/module/shared/title/SectionTitle";
 import ArticleCard from "./components/article-card/ArticleCard";
 import Button from "@/module/shared/buttons/Button";
+import style from "./style.module.scss";
 
 const LastArticleSection: FC = () => {
   return (

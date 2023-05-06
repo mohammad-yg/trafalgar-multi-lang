@@ -2,7 +2,6 @@ import { FC } from "react";
 import { AppLang } from "../layout/core/_model";
 import Layout from "../layout/Layout";
 import Header from "./components/header/Header";
-import style from "./style.module.scss";
 import FirstSection from "./components/first-section/FirstSection";
 import OurServcesSection from "./components/our-services-section/OurServcesSection";
 import LeadingHealthcareSection from "./components/leading-healthcare-section/LeadingHealthcareSection";
@@ -10,6 +9,7 @@ import DownloadMobileAppSection from "./components/download-mobile-app-section/D
 import CommentsSection from "./components/comments-section/CommentsSection";
 import LastArticleSection from "./components/last-article-section/LastArticleSection";
 import Footer from "./components/footer/Footer";
+import style from "./style.module.scss";
 
 type Prop = {
   lang: AppLang;

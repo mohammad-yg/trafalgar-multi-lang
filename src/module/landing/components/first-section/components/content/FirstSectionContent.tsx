@@ -1,7 +1,7 @@
 import { FC } from "react";
-import style from "./style.module.scss";
 import Button from "@/module/shared/buttons/Button";
 import Link from "next/link";
+import style from "./style.module.scss";
 
 const FirstSectionContent: FC = () => {
   return (

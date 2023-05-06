@@ -1,8 +1,8 @@
 import { FC } from "react";
-import style from "./style.module.scss";
 import SectionTitle from "@/module/shared/title/SectionTitle";
 import Button from "@/module/shared/buttons/Button";
 import { buttomArrow } from "@/module/shared/icons/arrows";
+import style from "./style.module.scss";
 
 const SectionContent: FC = () => {
   return (

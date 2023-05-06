@@ -1,9 +1,9 @@
 import SectionTitle from "@/module/shared/title/SectionTitle";
 import { FC } from "react";
-import style from "./style.module.scss";
-import Description from "./description/Description";
-import ServiceCard from "./service-card/ServiceCard";
+import Description from "./components/description/Description";
+import ServiceCard from "./components/service-card/ServiceCard";
 import Button from "@/module/shared/buttons/Button";
+import style from "./style.module.scss";
 
 const OurServcesSection: FC = () => {
   const services: {
