@@ -14,9 +14,6 @@ const Footer: FC = () => {
     column.map((_) => appTranslator.translate(["landing", "footer"], `Column_Links.${_}`))
   );
 
-  console.log(columnLisnk);
-  
-
   return (
     <>
       <footer className={style.footer}>
