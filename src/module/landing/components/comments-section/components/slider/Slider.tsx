@@ -3,17 +3,17 @@ import react from "react";
 import style from "./style.module.scss";
 
 type Prop = {
-  count: number;
+  slidesCount: number;
   activeSlide: number;
 };
 
-const Slider: react.FC<Prop & WithChild> = ({ children, count, activeSlide }) => {
+const Slider: react.FC<Prop & WithChild> = ({ children, slidesCount, activeSlide }) => {
   return (
     <>
       <div
         className={style.container}
         style={{
-          width: `${count * 100}%`,
+          width: `${slidesCount * 100}%`,
           right: `${activeSlide * 100}%`,
         }}
       >

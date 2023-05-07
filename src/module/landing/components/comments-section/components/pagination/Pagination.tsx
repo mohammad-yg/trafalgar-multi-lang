@@ -1,28 +1,30 @@
 import { FC } from "react";
 import style from "./style.module.scss";
 import { leftArrow, rightArrow } from "@/module/shared/icons/arrows";
+import { toNext, toPrevious, toSlide } from "./services/pagination";
 
 type Prop = {
   toNext: () => void;
   toPrevious: () => void;
   toSlide: (index: number) => void;
   activeSlide: number;
-  slidsCount: number;
+  slidesCount: number;
 };
 
 const Pagination: FC<Prop> = ({
-  toNext,
-  toPrevious,
-  toSlide,
+  toNext: propToNext,
+  toPrevious: propToPrevious,
+  toSlide: propToSlide,
   activeSlide,
-  slidsCount,
+  slidesCount,
 }) => {
   const items = [];
-  for (let i = 0; i < slidsCount; i++) {
+  for (let i = 0; i < slidesCount; i++) {
     items.push(
       <span
+        key={i}
         className={`${style.paginationBtn} ${
-          i === activeSlide ? style.active : ""
+          i === activeSlide && style.active
         }`}
         onClick={() => toSlideHandler(i)}
       ></span>
@@ -30,15 +32,15 @@ const Pagination: FC<Prop> = ({
   }
 
   const toSlideHandler = (index: number) => {
-    if (index !== activeSlide) toSlide(index);
+    toSlide(activeSlide, propToSlide, index);
   };
 
   const toNextHandler = () => {
-    if ((slidsCount - 1) !== activeSlide) toNext();
+    toNext(slidesCount, activeSlide, propToNext);
   };
 
   const toPreviousHandler = () => {
-    if (activeSlide !== 0) toPrevious();
+    toPrevious(activeSlide, propToPrevious);
   };
 
   return (
@@ -46,7 +48,7 @@ const Pagination: FC<Prop> = ({
       <div className={style.wrapper}>
         <div
           className={`${style.icon} ${style.toLeft} 
-          ${activeSlide !== 0 ? style.active : ""}`}
+          ${activeSlide !== 0 && style.active}`}
           onClick={toPreviousHandler}
         >
           {leftArrow}
@@ -54,7 +56,7 @@ const Pagination: FC<Prop> = ({
         <div className={style.paginationWrapper}>{items}</div>
         <div
           className={`${style.icon} ${style.toRight} ${
-            activeSlide !== (slidsCount - 1) ? style.active : ""
+            activeSlide !== slidesCount - 1 && style.active
           }`}
           onClick={toNextHandler}
         >

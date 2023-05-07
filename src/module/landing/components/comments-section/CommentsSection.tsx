@@ -3,19 +3,21 @@ import Slide from "./components/slide/Slide";
 import Pagination from "./components/pagination/Pagination";
 import style from "./style.module.scss";
 import Slider from "./components/slider/Slider";
+import { toNext, toPrevious, toSlide } from "./services/slider";
+
+const slidesCount = 4;
 
 const CommentsSection: FC = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
-  const toNext = () => {
-    setActiveSlide((prev) => ++prev)
+  const toNextHandler = () => {
+    toNext(setActiveSlide);
   };
-  const toPrevious = () => {
-    setActiveSlide((prev) => --prev)
+  const toPreviousHandler = () => {
+    toPrevious(setActiveSlide);
   };
-
-  const toSlide = (index: number) => {
-    setActiveSlide(index)
+  const toSlideHandler = (index: number) => {
+    toSlide(setActiveSlide, index);
   };
 
   return (
@@ -30,7 +32,7 @@ const CommentsSection: FC = () => {
             <div className={style.cardBackgroundElement}>
               <img src="/media/landing/svgs/element-2.svg" alt="background" />
             </div>
-            <Slider count={4} activeSlide={activeSlide}>
+            <Slider slidesCount={slidesCount} activeSlide={activeSlide}>
               <Slide
                 profile="/media/landing/images/image 1.png"
                 comment="Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"
@@ -62,7 +64,13 @@ const CommentsSection: FC = () => {
           </div>
         </div>
         <div className={style.pagination}>
-          <Pagination toNext={toNext} toPrevious={toPrevious} toSlide={toSlide} activeSlide={activeSlide} slidsCount={4}/>
+          <Pagination
+            toNext={toNextHandler}
+            toPrevious={toPreviousHandler}
+            toSlide={toSlideHandler}
+            activeSlide={activeSlide}
+            slidesCount={slidesCount}
+          />
         </div>
       </section>
     </>
