@@ -14,13 +14,13 @@ const enDictionary: AppDictionary = {
       "FirstSection.Title": "Virtual healthcare for you",
       "FirstSection.Text":
         "Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone",
-      "FirstSection.Buton": "Consult today",
+      "FirstSection.Button": "Consult today",
 
       // OurServcesSection
       "OurServcesSection.Title": "Our services",
       "OurServcesSection.Text":
         "We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health",
-      "OurServcesSection.Buton": "Learn more",
+      "OurServcesSection.Button": "Learn more",
 
       "OurServcesSection.Search_doctor.Title": "Search doctor",
       "OurServcesSection.Search_doctor.Text":
@@ -50,13 +50,13 @@ const enDictionary: AppDictionary = {
       "LeadingHealthcareSection.Title": "Leading healthcare providers",
       "LeadingHealthcareSection.Text":
         "Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver",
-      "LeadingHealthcareSection.Buton": "Learn more",
+      "LeadingHealthcareSection.Button": "Learn more",
 
       // DownloadMobileAppSection
       "DownloadMobileAppSection.Title": "Download our mobile apps",
       "DownloadMobileAppSection.Text":
         "Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
-      "DownloadMobileAppSection.Buton": "Download",
+      "DownloadMobileAppSection.Button": "Download",
 
       // What our customer are saying
       "CommentsSection.Title": "What our customer are saying",
@@ -64,7 +64,7 @@ const enDictionary: AppDictionary = {
       // LastArticleSection
       "LastArticleSection.Title": "Check out our latest article",
       "LastArticleSection.Card_Button": "Read more",
-      "LastArticleSection.Button": "Read more",
+      "LastArticleSection.Button": "View all",
     },
     footer: {
       About_us:
