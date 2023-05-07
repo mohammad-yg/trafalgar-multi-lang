@@ -33,12 +33,10 @@ const Footer: FC = () => {
               <h6 className={style.title}>{_[0]}</h6>
               <ul className={style.list}>
                 {_.map((item, index) => {
-                  if (index === 0) return <></>;
+                  if (index === 0) return;
                   return (
-                    <li className={style.item}>
-                      <Link href={""} key={columnIndex + "-" + index}>
-                        {item}
-                      </Link>
+                    <li className={style.item} key={columnIndex + "-" + index}>
+                      <Link href={"#"}>{item}</Link>
                     </li>
                   );
                 })}
