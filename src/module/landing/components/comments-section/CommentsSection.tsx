@@ -1,14 +1,18 @@
-import { FC, useState } from "react";
+import { FC, useMemo, useState } from "react";
 import Slide from "./components/slide/Slide";
 import Pagination from "./components/pagination/Pagination";
 import style from "./style.module.scss";
 import Slider from "./components/slider/Slider";
 import { toNext, toPrevious, toSlide } from "./services/slider";
+import { getComments } from "./services/comments";
 
-const slidesCount = 4;
+const slidesCount = 5;
 
 const CommentsSection: FC = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const comments = useMemo(() => {
+    return getComments().data;
+  }, []);
 
   const toNextHandler = () => {
     toNext(setActiveSlide);
@@ -33,30 +37,9 @@ const CommentsSection: FC = () => {
               <img src="/media/landing/svgs/element-2.svg" alt="background" />
             </div>
             <Slider slidesCount={slidesCount} activeSlide={activeSlide}>
-              <Slide
-                profile="/media/landing/images/image 1.png"
-                comment="Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"
-                name="Edward Newgate 1"
-                jobPosition="Founder Circle"
-              />
-              <Slide
-                profile="/media/landing/images/image 1.png"
-                comment="Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"
-                name="Edward Newgate 2"
-                jobPosition="Founder Circle"
-              />
-              <Slide
-                profile="/media/landing/images/image 1.png"
-                comment="Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"
-                name="Edward Newgate 3"
-                jobPosition="Founder Circle"
-              />
-              <Slide
-                profile="/media/landing/images/image 1.png"
-                comment="Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"
-                name="Edward Newgate 4"
-                jobPosition="Founder Circle"
-              />
+              {comments.map((_) => (
+                <Slide key={_.id} {..._} />
+              ))}
             </Slider>
           </div>
           <div className={style.backgroundElement}>
