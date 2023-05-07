@@ -1,7 +1,11 @@
 @use "variables" as *;
 
-body {
+.parent {
   font-family: $basic-font-family, serif;
+}
+
+[data-lang=fa] .parent{
+  font-family: $farsi-font-family, serif;
 }
 
 *{

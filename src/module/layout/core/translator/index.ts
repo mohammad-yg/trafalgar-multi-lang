@@ -1,3 +1,4 @@
+import { AppLang } from "../_model";
 import { AppDictionary } from "./_models";
 
 const appTranslate = (
@@ -19,4 +20,7 @@ const appTranslate = (
   }
 };
 
+const rltLangs: AppLang[] = ["fa"];
+
 export default appTranslate;
+export {rltLangs}

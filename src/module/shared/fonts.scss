@@ -1,5 +1,11 @@
 @font-face {
-    font-family: "Muli";
-    src: url("/fonts/muli/Muli-Regular.ttf"); /* IE9 Compat Modes */
-    src: url("/fonts/muli/Muli-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
-  }
+  font-family: "Muli";
+  src: url("/fonts/muli/Muli-Regular.ttf"); /* IE9 Compat Modes */
+  src: url("/fonts/muli/Muli-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "b-yekan";
+  src: url("/fonts/B Yekan/BYekan+.ttf"); /* IE9 Compat Modes */
+  src: url("/fonts/B Yekan/BYekan+.ttf") format("truetype"); /* Safari, Android, iOS */
+}
