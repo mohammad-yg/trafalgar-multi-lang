@@ -85,8 +85,8 @@ const faDictionary: AppDictionary = {
       "Column_Links.Canada": "کانادا",
 
       "Column_Links.Help": "کمک",
-      "Column_Links.Help center": "مرکز درمان",
-      "Column_Links.Contact support": "با پشتیبانی تماس بگیرید",
+      "Column_Links.Help_center": "مرکز درمان",
+      "Column_Links.Contact_support": "با پشتیبانی تماس بگیرید",
       "Column_Links.Instructions": "دستورالعمل ها",
       "Column_Links.How_it_works": "عملکرد ما",
     },

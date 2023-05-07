@@ -85,8 +85,8 @@ const enDictionary: AppDictionary = {
       "Column_Links.Canada": "Canada",
 
       "Column_Links.Help": "Help",
-      "Column_Links.Help center": "Help center",
-      "Column_Links.Contact support": "Contact support",
+      "Column_Links.Help_center": "Help center",
+      "Column_Links.Contact_support": "Contact support",
       "Column_Links.Instructions": "Instructions",
       "Column_Links.How_it_works": "How it works",
     },
