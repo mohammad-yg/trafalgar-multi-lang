@@ -9,7 +9,14 @@ const useLang = () => {
   return lang
 }
 
+const useAppTranslator = () => {
+  const {appTranslator} = useContext(LayoutCotnext)
+
+  return appTranslator
+}
+
 export {
   LayoutCotnext,
   useLang,
+  useAppTranslator
 };
