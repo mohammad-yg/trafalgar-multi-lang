@@ -4,6 +4,7 @@ import Description from "./components/description/Description";
 import ServiceCard from "./components/service-card/ServiceCard";
 import Button from "@/module/shared/buttons/Button";
 import style from "./style.module.scss";
+import { useAppTranslator } from "@/module/layout/core/layoutContext";
 
 const OurServcesSection: FC = () => {
   const services: {
@@ -47,6 +48,9 @@ const OurServcesSection: FC = () => {
       description: "Track and save your medical history and health data ",
     },
   ];
+
+  const appTranslator = useAppTranslator();
+
   return (
     <>
       <section className={style.section}>
@@ -56,7 +60,12 @@ const OurServcesSection: FC = () => {
         </div>
 
         <div>
-          <SectionTitle direction="center">Our services</SectionTitle>
+          <SectionTitle direction="center">
+            {appTranslator.translate(
+              ["landing", "content"],
+              "OurServcesSection.Title"
+            )}
+          </SectionTitle>
           <Description />
         </div>
         <div className={style.servicesWrapper}>
@@ -65,7 +74,14 @@ const OurServcesSection: FC = () => {
           ))}
         </div>
         <div className={style.buttonWrapper}>
-          <Button title="Learn more" style="hollow" className={style.button} />
+          <Button
+            title={appTranslator.translate(
+              ["landing", "content"],
+              "OurServcesSection.Button"
+            )}
+            style="hollow"
+            className={style.button}
+          />
         </div>
       </section>
     </>

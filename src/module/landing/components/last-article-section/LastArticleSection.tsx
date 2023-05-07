@@ -3,13 +3,19 @@ import SectionTitle from "@/module/shared/title/SectionTitle";
 import ArticleCard from "./components/article-card/ArticleCard";
 import Button from "@/module/shared/buttons/Button";
 import style from "./style.module.scss";
+import { useAppTranslator } from "@/module/layout/core/layoutContext";
 
 const LastArticleSection: FC = () => {
+  const appTranslator = useAppTranslator();
+
   return (
     <>
       <section className={style.section}>
         <SectionTitle direction="center">
-          Check out our latest article
+          {appTranslator.translate(
+            ["landing", "content"],
+            "LastArticleSection.Title"
+          )}
         </SectionTitle>
         <div className={style.articleWrapper}>
           <ArticleCard
@@ -31,12 +37,27 @@ const LastArticleSection: FC = () => {
             title="Natural care for healthy facial skin"
           />
         </div>
-        <Button title="View all" style="hollow" className={style.button}/>
+        <Button
+          title={appTranslator.translate(
+            ["landing", "content"],
+            "LastArticleSection.Button"
+          )}
+          style="hollow"
+          className={style.button}
+        />
         <div className={style.background}>
-            <img className={style.backgroundElement} src="/media/landing/svgs/element.svg" alt="background"/>
+          <img
+            className={style.backgroundElement}
+            src="/media/landing/svgs/element.svg"
+            alt="background"
+          />
         </div>
         <div className={style.background2}>
-            <img className={style.backgroundElement} src="/media/landing/svgs/background-2.svg" alt="background"/>
+          <img
+            className={style.backgroundElement}
+            src="/media/landing/svgs/background-2.svg"
+            alt="background"
+          />
         </div>
       </section>
     </>

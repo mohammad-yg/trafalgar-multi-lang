@@ -1,13 +1,21 @@
 import { FC } from "react";
 import style from "./style.module.scss";
 import Link from "next/link";
+import { useAppTranslator } from "@/module/layout/core/layoutContext";
 
 const Footer: FC = () => {
+  const appTranslator = useAppTranslator();
+
   const columnLisnk = [
-    ["Company", "About", "Testimonials", "Find a doctor", "Apps"],
+    ["Company", "About", "Testimonials", "Find_a_doctor", "Apps"],
     ["Region", "Indonesia", "Singapore", "Hongkong", "Canada"],
-    ["Help", "Help center", "Contact support", "Instructions", "How it works"],
-  ];
+    ["Help", "Help_center", "Contact_support", "Instructions", "How_it_works"],
+  ].map((column) =>
+    column.map((_) => appTranslator.translate(["landing", "footer"], `Column_Links.${_}`))
+  );
+
+  console.log(columnLisnk);
+  
 
   return (
     <>
@@ -21,10 +29,11 @@ const Footer: FC = () => {
             </div>
             <div className={style.content}>
               <p>
-                Trafalgar provides progressive, and affordable healthcare,
-                accessible on mobile and online for everyone
+                {appTranslator.translate(["landing", "footer"], "About_us")}
               </p>
-              <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+              <p>
+                {appTranslator.translate(["landing", "footer"], "Copyright")}
+              </p>
             </div>
           </div>
 
