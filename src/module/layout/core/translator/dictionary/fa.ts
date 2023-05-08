@@ -73,7 +73,7 @@ const faDictionary: AppDictionary = {
 
       // column 1
       "Column_Links.Company": "شرکت",
-      "Column_Links.About": "در باره",
+      "Column_Links.About": "درباره ما",
       "Column_Links.Testimonials": "گواهینامه ها",
       "Column_Links.Find_a_doctor": "پیدا کردن پزشک",
       "Column_Links.Apps": "برنامه ها",
