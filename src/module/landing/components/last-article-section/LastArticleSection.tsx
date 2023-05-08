@@ -38,13 +38,12 @@ const LastArticleSection: FC = () => {
           />
         </div>
         <Button
-          title={appTranslator.translate(
-            ["landing", "content"],
-            "LastArticleSection.Button"
-          )}
           style="hollow"
           className={style.button}
-        />
+        >{appTranslator.translate(
+            ["landing", "content"],
+            "LastArticleSection.Button"
+          )}</Button>
         <div className={style.background}>
           <img
             className={style.backgroundElement}

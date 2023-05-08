@@ -3,7 +3,7 @@ import { WithChild } from "../_models";
 import style from "./style.module.scss";
 
 type Prop = {
-  direction: "center" | "rtl" | "ltr";
+  direction: "center" | "around";
 };
 
 const SectionTitle: FC<Prop & WithChild> = ({ children, direction }) => {

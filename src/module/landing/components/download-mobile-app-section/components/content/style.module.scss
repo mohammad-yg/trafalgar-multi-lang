@@ -4,7 +4,7 @@
 
 .textWrapper {
   margin-top: 30px;
-  
+
   p {
     font-weight: 300;
     font-size: 18px;
@@ -15,6 +15,13 @@
 
 .buttonIcon {
   margin-left: 14px;
+
+  [data-dir="rtl"] & {
+    margin-left: 0;
+    margin-right: 14px;
+    position: relative;
+    top: 2px;
+  }
 }
 
 .button {

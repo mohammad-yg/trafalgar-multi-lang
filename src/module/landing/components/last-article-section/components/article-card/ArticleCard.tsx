@@ -31,7 +31,7 @@ const ArticleCard: FC<Prop> = ({ image, link, text, title }) => {
             <span>
               {appTranslator.translate(
                 ["landing", "content"],
-                "LastArticleSection.Button"
+                "LastArticleSection.Card_Button"
               )}
             </span>
             <span className={style.icon}>{rightArrow}</span>

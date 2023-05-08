@@ -1,4 +1,8 @@
+@use "/src/module/shared/variables" as *;
+
 .wrapper {
+  font-family: $basic-font-family;
+  direction: ltr;
   display: flex;
   flex-direction: row;
   align-items: center;

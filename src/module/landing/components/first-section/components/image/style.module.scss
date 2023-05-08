@@ -1,4 +1,9 @@
-.image{
-    position: relative;
-    right: -27px;
+.image {
+  position: relative;
+  right: -27px;
+
+  [data-dir="rtl"] & {
+    right: auto;
+    left: -27px;
+  }
 }

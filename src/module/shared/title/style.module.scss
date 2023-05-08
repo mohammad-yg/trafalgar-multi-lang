@@ -6,18 +6,21 @@
       margin: 26px auto 0 auto;
     }
   }
-  &.rtl {
-    text-align: right;
-    .line {
-      margin-top: 26px;
-      margin-left: auto;
+  &.around {
+    [data-dir="rtl"] &{
+      text-align: right;
+      .line {
+        margin-top: 26px;
+        margin-left: auto;
+      }
     }
-  }
-  &.ltr {
-    text-align: left;
-    .line {
-      margin-top: 26px;
-      margin-right: auto;
+
+    [data-dir="ltr"]{
+      text-align: left;
+      .line {
+        margin-top: 26px;
+        margin-right: auto;
+      }
     }
   }
 }

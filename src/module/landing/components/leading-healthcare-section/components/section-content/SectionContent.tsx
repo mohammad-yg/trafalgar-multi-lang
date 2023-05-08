@@ -10,7 +10,7 @@ const SectionContent: FC = () => {
   return (
     <>
       <div className={style.wrapper}>
-        <SectionTitle direction="ltr">
+        <SectionTitle direction="around">
           {appTranslator.translate(
             ["landing", "content"],
             "LeadingHealthcareSection.Title"
@@ -25,12 +25,12 @@ const SectionContent: FC = () => {
           </p>
         </div>
         <div className={style.buttonWrapper}>
-          <Button title=
+          <Button style="hollow" className={style.button}>
             {appTranslator.translate(
               ["landing", "content"],
               "LeadingHealthcareSection.Button"
             )}
-           style="hollow" className={style.button} />
+          </Button>
         </div>
       </div>
     </>

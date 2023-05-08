@@ -4,6 +4,7 @@
 
 .cardWrapper{
   position: relative;
+  direction: ltr;
 }
 
 .card {
@@ -54,3 +55,6 @@
   right: -48px;
 }
 
+.pagination{
+  direction: ltr;
+}

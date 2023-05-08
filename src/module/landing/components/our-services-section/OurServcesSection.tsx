@@ -74,14 +74,12 @@ const OurServcesSection: FC = () => {
           ))}
         </div>
         <div className={style.buttonWrapper}>
-          <Button
-            title={appTranslator.translate(
+          <Button style="hollow" className={style.button}>
+            {appTranslator.translate(
               ["landing", "content"],
               "OurServcesSection.Button"
             )}
-            style="hollow"
-            className={style.button}
-          />
+          </Button>
         </div>
       </section>
     </>

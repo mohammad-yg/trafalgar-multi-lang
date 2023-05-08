@@ -11,7 +11,7 @@ const SectionContent: FC = () => {
   return (
     <>
       <div className={style.contentWrapper}>
-        <SectionTitle direction="ltr">
+        <SectionTitle direction="around">
           {appTranslator.translate(
             ["landing", "content"],
             "DownloadMobileAppSection.Title"
@@ -25,14 +25,13 @@ const SectionContent: FC = () => {
             )}
           </p>
         </div>
-        <Button
-          style="hollow"
-          title={appTranslator.translate(
-            ["landing", "content"],
-            "DownloadMobileAppSection.Button"
-          )}
-          className={style.button}
-        >
+        <Button style="hollow" className={style.button}>
+          <span className={style.buttonText}>
+            {appTranslator.translate(
+              ["landing", "content"],
+              "DownloadMobileAppSection.Button"
+            )}
+          </span>
           <span className={style.buttonIcon}>{buttomArrow}</span>
         </Button>
       </div>

@@ -30,7 +30,7 @@ const CommentsSection: FC = () => {
   return (
     <>
       <section className={style.section}>
-        <div className={style.cardWrapper}>
+        <div className={style.cardWrapper} dir="ltr">
           <div className={style.card}>
             <div className={style.titleWrapper}>
               <h3>{appTranslator.translate(['landing','content'],'CommentsSection.Title')}</h3>
@@ -49,7 +49,7 @@ const CommentsSection: FC = () => {
             <img src="/media/landing/svgs/element.svg" alt="background" />
           </div>
         </div>
-        <div className={style.pagination}>
+        <div className={style.pagination} dir="ltr">
           <Pagination
             toNext={toNextHandler}
             toPrevious={toPreviousHandler}

@@ -20,13 +20,12 @@ const FirstSectionContent: FC = () => {
           {appTranslator.translate(["landing", "content"], "FirstSection.Text")}
         </p>
         <Link href={"#"} className={style.buttonWrapper}>
-          <Button
-            title={appTranslator.translate(
+          <Button style="fill">
+            {appTranslator.translate(
               ["landing", "content"],
               "FirstSection.Button"
             )}
-            style="fill"
-          />
+          </Button>
         </Link>
       </div>
     </>

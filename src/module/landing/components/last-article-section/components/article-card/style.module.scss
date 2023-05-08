@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 35px;
+  padding: 0 35px;
   padding-bottom: 33px;
   color: #4089ed;
   span:first-child{
@@ -58,6 +58,11 @@
 
   .icon {
     margin-left: 10px;
+    [data-dir="rtl"] &{
+      transform: rotate(180deg);
+      margin-left: 0;
+      margin-right: 10px;
+    }
     svg {
       height: 11px;
     }
