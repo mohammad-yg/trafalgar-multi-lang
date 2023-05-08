@@ -7,6 +7,8 @@ import style from "./style.module.scss";
 import { useAppTranslator } from "@/module/layout/core/layoutContext";
 
 const OurServcesSection: FC = () => {
+  const appTranslator = useAppTranslator();
+
   const services: {
     icon: string;
     title: string;
@@ -14,42 +16,40 @@ const OurServcesSection: FC = () => {
   }[] = [
     {
       icon: "/media/landing/svgs/service-1.svg",
-      title: "Search doctor",
+      title: "OurServcesSection.Search_doctor.Title",
       description:
-        "Choose your doctor from thousands of specialist, general, and trusted hospitals",
+        "OurServcesSection.Search_doctor.Text",
     },
     {
       icon: "/media/landing/svgs/service-2.svg",
-      title: "Online pharmacy",
+      title: "OurServcesSection.Online_pharmacy.Title",
       description:
-        "Buy  your medicines with our mobile application with a simple delivery system",
+        "OurServcesSection.Online_pharmacy.Text",
     },
     {
       icon: "/media/landing/svgs/service-3.svg",
-      title: "Consultation",
+      title: "OurServcesSection.Consultation.Title",
       description:
-        "Free consultation with our trusted doctors and get the best recomendations",
+        "OurServcesSection.Consultation.Text",
     },
     {
       icon: "/media/landing/svgs/service-4.svg",
-      title: "Details info",
+      title: "OurServcesSection.Details_info.Title",
       description:
-        "Free consultation with our trusted doctors and get the best recomendations",
+        "OurServcesSection.Details_info.Text",
     },
     {
       icon: "/media/landing/svgs/service-5.svg",
-      title: "Emergency care",
+      title: "OurServcesSection.Emergency_care.Title",
       description:
-        "You can get 24/7 urgent care for yourself or your children and your lovely family",
+        "OurServcesSection.Emergency_care.Text",
     },
     {
       icon: "/media/landing/svgs/service-6.svg",
-      title: "Tracking",
-      description: "Track and save your medical history and health data ",
+      title: "OurServcesSection.Tracking.Title",
+      description: "OurServcesSection.Tracking.Text",
     },
   ];
-
-  const appTranslator = useAppTranslator();
 
   return (
     <>
@@ -70,7 +70,15 @@ const OurServcesSection: FC = () => {
         </div>
         <div className={style.servicesWrapper}>
           {services.map((_, index) => (
-            <ServiceCard key={index} {..._} />
+            <ServiceCard
+              key={index}
+              icon={_.icon}
+              title={appTranslator.translate(["landing", "content"], _.title)}
+              description={appTranslator.translate(
+                ["landing", "content"],
+                _.description
+              )}
+            />
           ))}
         </div>
         <div className={style.buttonWrapper}>

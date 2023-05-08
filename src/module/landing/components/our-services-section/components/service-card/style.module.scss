@@ -20,6 +20,12 @@
   transform: translate(50%,-50%);
   left: 5px;
   top: 85px;
+  
+  [data-dir="rtl"] &{
+    transform: translate(-50%,-50%);
+    left: unset;
+    right: 5px;
+  }
 }
 
 .title {
