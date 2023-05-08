@@ -1,0 +1,81 @@
+.slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 274px;
+  width: 100%;
+
+  [data-dir="rtl"] & {
+    direction: rtl;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.imageRing {
+  margin-right: 15px;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  [data-dir="rtl"] & {
+    margin-right: unset;
+    margin-left: 15px;
+  }
+}
+
+.imageWrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    width: 133px;
+    height: 133px;
+  }
+}
+
+.profileDetil {
+  color: #ffffff;
+  margin-left: 15px;
+  [data-dir="rtl"] & {
+    margin-left: unset;
+    margin-right: 15px;
+  }
+}
+
+.name {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 48px;
+}
+
+.jobPosition {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 48px;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.comment {
+  width: 50%;
+  font-weight: 400;
+  font-size: 19px;
+
+  color: rgba(255, 255, 255, 0.9);
+  p {
+    padding-left: 15px;
+    line-height: 30px;
+    max-width: 411px;
+
+    [data-dir="rtl"] & {
+      padding-left: unset;
+      padding-right: 15px;
+    }
+  }
+}

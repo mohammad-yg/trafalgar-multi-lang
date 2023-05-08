@@ -1,0 +1,60 @@
+.section {
+  margin-top: 266px;
+}
+
+.cardWrapper{
+  position: relative;
+}
+
+.card {
+  position: relative;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+  max-width: 1120px;
+  height: 425px;
+  overflow: hidden;
+  margin: 0 auto;
+  direction: ltr;
+}
+
+.titleWrapper {
+  margin-top: 64px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  display: block;
+  
+  h3{
+      color: #ffffff;
+      line-height: 48px;
+  }
+  span{
+    display: block;
+    width: 56px;
+    height: 2px;
+    border-radius: 2px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+  }
+}
+
+.backgroundElement{
+  height: 0;
+  position: relative;
+  top: -156px;
+  right: 6px;
+  z-index: -1;
+}
+
+.cardBackgroundElement{
+  position: absolute;
+  top: -17px;
+  right: -48px;
+}
+
+.pagination{
+  direction: ltr;
+}

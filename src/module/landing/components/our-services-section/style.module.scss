@@ -1,0 +1,28 @@
+.section {
+  margin-top: 192px;
+}
+
+.servicesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.background {
+  :first-child {
+    position: absolute;
+    left: 0;
+    margin-top: 220px;
+  }
+  :last-child {
+    position: absolute;
+    margin-top: 548px;
+    right: 278px;
+  }
+}

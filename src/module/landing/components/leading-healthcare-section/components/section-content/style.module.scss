@@ -1,0 +1,23 @@
+.wrapper {
+  max-width: 400px;
+  margin-left: auto;
+
+  [data-dir="rtl"] & {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.text {
+  margin-top: 30px;
+  p {
+    color: #7d7987;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.buttonWrapper {
+  margin-top: 40px;
+}

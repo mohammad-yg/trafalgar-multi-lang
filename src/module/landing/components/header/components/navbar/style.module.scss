@@ -1,0 +1,44 @@
+@use "/src/module/shared/variables" as *;
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+
+  li {
+    margin: 0 20px;
+    color: #1f1534;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 18px;
+
+    font-style: normal;
+    line-height: 23px;
+
+    &.active {
+      font-weight: 700;
+      opacity: 1;
+    }
+  }
+}
+
+.languageItem {
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  img {
+    width: 30px;
+    padding-top: 5px;
+    margin-right: 5px;
+  }
+
+  [data-dir="ltr"] & {
+    font-family: $farsi-font-family;
+  }
+  [data-dir="rtl"] & {
+    font-family: $basic-font-family;
+  }
+}

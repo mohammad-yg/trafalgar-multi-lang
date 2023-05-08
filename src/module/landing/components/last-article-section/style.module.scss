@@ -1,0 +1,30 @@
+.section {
+  margin-top: 220px;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.articleWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+}
+
+.button {
+  margin: 0 auto;
+  margin-top: 72px;
+}
+
+.background {
+    position: absolute;
+    top: 120px;
+    left: -50px;
+    z-index: -1;
+}
+
+.background2 {
+    position: absolute;
+    top: 120px;
+    right: -314px;
+    z-index: -1;
+}
