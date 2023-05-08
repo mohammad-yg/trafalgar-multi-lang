@@ -1,20 +1,22 @@
-import { FC, useMemo, useState } from "react";
+import { FC, useContext, useMemo, useState } from "react";
 import Slide from "./components/slide/Slide";
 import Pagination from "./components/pagination/Pagination";
 import style from "./style.module.scss";
 import Slider from "./components/slider/Slider";
 import { toNext, toPrevious, toSlide } from "./services/slider";
 import { getComments } from "./services/comments";
-import { useAppTranslator } from "@/module/layout/core/layoutContext";
+import {
+  LayoutCotnext,
+} from "@/module/layout/core/layoutContext";
 
 const slidesCount = 5;
 
 const CommentsSection: FC = () => {
-  const appTranslator = useAppTranslator();
+  const { lang, appTranslator } = useContext(LayoutCotnext);
 
   const [activeSlide, setActiveSlide] = useState(0);
   const comments = useMemo(() => {
-    return getComments().data;
+    return getComments(lang).data;
   }, []);
 
   const toNextHandler = () => {
@@ -30,10 +32,15 @@ const CommentsSection: FC = () => {
   return (
     <>
       <section className={style.section}>
-        <div className={style.cardWrapper} dir="ltr">
-          <div className={style.card}>
+        <div className={style.cardWrapper}>
+          <div className={style.card} dir="ltr">
             <div className={style.titleWrapper}>
-              <h3>{appTranslator.translate(['landing','content'],'CommentsSection.Title')}</h3>
+              <h3>
+                {appTranslator.translate(
+                  ["landing", "content"],
+                  "CommentsSection.Title"
+                )}
+              </h3>
               <span></span>
             </div>
             <div className={style.cardBackgroundElement}>

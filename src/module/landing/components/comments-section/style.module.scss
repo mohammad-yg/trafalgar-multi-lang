@@ -4,7 +4,6 @@
 
 .cardWrapper{
   position: relative;
-  direction: ltr;
 }
 
 .card {
@@ -15,6 +14,7 @@
   height: 425px;
   overflow: hidden;
   margin: 0 auto;
+  direction: ltr;
 }
 
 .titleWrapper {
