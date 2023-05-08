@@ -6,6 +6,13 @@
   font-size: 18px;
   line-height: 56px;
   text-align: center;
+  
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+
 
   &.fill {
     background-color: #458ff6;
